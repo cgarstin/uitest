@@ -1,0 +1,38 @@
+// refinements
+
+.refinements {
+	position: relative;
+	padding-top: 10px;
+	width: 180px;
+	.panel {
+		position: relative;
+		margin-top: 20px;
+		padding-top: 10px;
+		border-top: 1px solid $colour_3;
+		.options {
+			border: 1px solid $colour_4;
+			&.scrollable {
+				max-height: 146px;
+				overflow-y: scroll;
+			}
+			&.two-column {
+				ul {
+					li {
+						display: inline-block;
+						width: 80px;
+					}
+				}
+			}
+		}
+	}
+	.clear-filter {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 10px;
+		&.visible {
+			display: inline;
+		}
+	}
+	
+}

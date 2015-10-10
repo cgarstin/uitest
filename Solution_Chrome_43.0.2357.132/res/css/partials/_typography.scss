@@ -1,0 +1,31 @@
+//typography
+
+body {
+	font-family: $font_1;
+	font-weight: 400;
+	font-size: 0.9em;
+	line-height: 1.2em;
+	color: $colour_2;
+	h2 {
+		margin: 0 auto 10px auto;
+		font-size: 1.5em;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $colour_1;
+	}
+	h3 {
+		margin: 0 auto 10px auto;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $colour_1;
+	}
+	a {
+		font-size: 0.9em;
+		font-weight: 700;
+		text-decoration: none;
+		color: inherit;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
