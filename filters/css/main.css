@@ -1,0 +1,85 @@
+/* line 14, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+html {
+  font-size: 14px; }
+
+/* line 18, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+h2 {
+  font-size: 1.5rem; }
+
+/* line 22, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+h3 {
+  margin: 0 auto 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem; }
+
+/* line 29, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+a {
+  color: #000;
+  text-decoration: none; }
+  /* line 32, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+  a:hover {
+    text-decoration: underline; }
+
+/* line 37, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 42, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+li {
+  list-style: none; }
+
+/* line 46, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+.refinements {
+  width: 180px; }
+  /* line 48, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+  .refinements__header {
+    display: inline-block;
+    width: calc(100% - 60px); }
+    /* line 51, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+    .refinements__header + .clear-filter {
+      display: inline;
+      width: 60px; }
+
+/* line 59, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+.clear-filter {
+  visibility: hidden;
+  width: 32px;
+  display: inline-block; }
+
+/* line 65, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+.is-visible {
+  visibility: visible; }
+
+/* line 69, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+.refinement-header {
+  display: inline-block;
+  width: calc(100% - 32px - 1em); }
+
+/* line 74, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+.panel {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #999; }
+
+/* line 81, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+.options {
+  border: 1px solid #ccc; }
+  /* line 83, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+  .options.scrollable {
+    max-height: 150px;
+    overflow-y: scroll; }
+  /* line 3, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+  .options.two-column:before,
+  .options.two-column:after {
+    content: "";
+    display: table; }
+  /* line 7, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+  .options.two-column:after {
+    clear: both; }
+  /* line 89, /Users/x130204/projects/UI_Test/filters/scss/main.scss */
+  .options.two-column li {
+    width: 50%;
+    display: block;
+    float: left; }
