@@ -1,0 +1,95 @@
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+$standard-border: 1px solid #ccc;
+$separation-border: 1px solid #999;
+
+html {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin: 0 auto 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.refinements {
+    width: 180px;
+    &__header {
+        display: inline-block;
+        width: calc(100% - 60px);
+        & + .clear-filter {
+            display: inline;
+            width: 60px;
+
+        }
+    }
+}
+
+.clear-filter {
+    visibility: hidden;
+    width: 32px;
+    display: inline-block;
+}
+
+.is-visible {
+    visibility: visible;
+}
+
+.refinement-header {
+    display: inline-block;
+    width: calc(100% - 32px - 1em);
+}
+
+.panel {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: $separation-border;
+}
+
+
+.options {
+    border: $standard-border;
+    &.scrollable {
+        max-height: 150px;
+        overflow-y: scroll;
+    }
+    &.two-column {
+        @include clearfix;
+        li {
+            width: 50%;
+            display: block;
+            float: left;
+        }
+    }
+}
